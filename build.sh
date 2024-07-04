@@ -20,6 +20,10 @@ while [ $# -gt 0 ]; do
             BUILD_TARGET="$1"
             shift
             ;;
+        "--not-install")
+            NOT_INSTALL="ON"
+            shift
+            ;;
         *)
             echo "無効なオプションが指定されました: $1"
             exit 1
@@ -29,4 +33,6 @@ done
 
 cmake -B $BUILD_DIR -DCMAKE_INSTALL_PREFIX=./bin
 cmake --build $BUILD_DIR --target $BUILD_TARGET -j$(nproc)
-cmake --install $BUILD_DIR --component $BUILD_TARGET
+if [ !-z "${NOT_INSTALL}"]; then
+    cmake --install $BUILD_DIR --component $BUILD_TARGET
+fi
