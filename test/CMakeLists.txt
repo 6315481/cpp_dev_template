@@ -3,6 +3,7 @@ enable_testing()
 add_executable(
     test
     test.cpp
+    test2.cpp    
 )
 target_link_libraries(
     test
