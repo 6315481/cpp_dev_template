@@ -30,6 +30,13 @@
 			},
 			"group": "build",
 			"detail": "CMake build task for all targets"
+		},
+		{
+			"type": "shell",
+			"label": "CMake: build and execute tests",
+			"command": "./test.sh",
+			"group": "build",
+			"detail": "CMake build task for all targets"
 		}
 	]
 }
