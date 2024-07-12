@@ -9,7 +9,9 @@
                 "/usr/local/include",
                 "/usr/include",
                 "/usr/include/x86_64-linux-gnu/c++/11",
-                "/usr/include/x86_64-linux-gnu"
+                "/usr/include/x86_64-linux-gnu",
+                "${workspaceFolder}/third-party/glfw3.4/include/",
+                "${workspaceFolder}/third-party/glad/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",
