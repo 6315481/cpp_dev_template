@@ -12,6 +12,7 @@
                 "/usr/include/x86_64-linux-gnu",
                 "${workspaceFolder}/third-party/glfw3.4/include/",
                 "${workspaceFolder}/third-party/glad/include"
+                "${workspaceFolder}/third-party/imgui/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",
